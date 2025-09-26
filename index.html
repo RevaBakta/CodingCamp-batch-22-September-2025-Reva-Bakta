@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootcamp Website</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">
+      <img src="asset/revou.jpg" alt="Logo RevoU" width="50">
+    </div>
+
+    <div class="navbar">
+      <a href="#Home">Home</a>
+      <a href="#profile">Our Profile</a>
+      <a href="#headquarter">Headquarter</a>
+      <a href="#message">Message Us</a>
+    </div>
+  </nav>
+  <hr>
+
+  <!--Home -->
+  <div class="hero" id="Home">
+    <div class="teks">
+      <h1>Hi Welcome to My Website</h1>
+      <p id="welcome-message">Website latihan pertama</p>
+    </div>
+  </div>
+  <hr>
+
+  
+  <!-- Our Profile -->
+  <section class="our-profile" id="profile">
+    <h1>Our Profile</h1>
+    <p>
+      RevoU adalah sekolah online untuk karier digital. Kami membantu ribuan
+      orang di Asia Tenggara untuk memulai dan mengembangkan karier di bidang
+      teknologi, seperti Product Management, Software Engineering, Data, dan Digital Marketing.
+    </p>
+
+    <h2>Visi</h2>
+    <p>
+      Menjadi lembaga pendidikan digital terdepan di Asia Tenggara
+      yang membantu mencetak talenta siap kerja di industri teknologi.
+    </p>
+
+    <h2>Misi</h2>
+    <ul>
+      <li>Membekali peserta dengan keterampilan digital yang relevan dengan industri.</li>
+      <li>Mendukung pembelajaran berbasis praktik nyata bersama mentor berpengalaman.</li>
+      <li>Membangun komunitas pembelajar yang saling mendukung.</li>
+    </ul>
+
+    <h2>Program Utama</h2>
+    <ul>
+      <li>Full-Stack Software Engineering</li>
+      <li>Digital Marketing</li>
+      <li>Data Analytics</li>
+      <li>Product Management</li>
+    </ul>
+
+    <h2>Tim & Mentor</h2>
+    <p>
+      RevoU memiliki tim pengajar dan mentor yang berasal dari perusahaan teknologi ternama
+      seperti Gojek, Tokopedia, Traveloka, dan banyak lagi.
+    </p>
+  </section>
+  <hr>
+
+  <!-- Our Headquarter -->
+  <div class="laman3" id="headquarter">
+    <h1>Our Headquarter</h1>
+    <div class="sub3">
+      <div class="jakarta">
+        <img src="asset/download.jpg" alt="">
+        <h2>jakarta</h2>
+      </div>
+  
+      <div class="bandung">
+        <img src="asset/Bandung.jpg" alt="">
+        <h2>Bandung</h2>
+      </div>
+  
+      <div class="surabaya">
+        <img src="asset/surabaya.jpg" alt="">
+        <h2>Surabaya</h2>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Message Us -->
+  <div class="laman4" id="message">
+    <!-- Form Box -->
+    <div class="form-box">
+      <h3>Message Us</h3>
+      <form id="myForm">
+        <label>Nama:</label><br>
+        <input type="text" id="nama" required><br><br>
+
+        <label>Tanggal Lahir:</label><br>
+        <input type="date" id="tgl" required><br><br>
+
+        <label>Jenis Kelamin:</label><br>
+        <input type="radio" name="jk" value="Laki-Laki" required> Laki-Laki
+        <input type="radio" name="jk" value="Perempuan"> Perempuan<br><br>
+
+        <label>Pesan:</label><br>
+        <textarea id="pesan" required></textarea><br><br>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- Output Box -->
+    <div class="output-box">
+      <h3 class="teks-black">Output</h3>
+      <p><b>Current time :</b> <span id="time">-</span></p>
+      <p><b>Nama :</b> <span id="outNama">-</span></p>
+      <p><b>Tanggal Lahir :</b> <span id="outTgl">-</span></p>
+      <p><b>Jenis Kelamin :</b> <span id="outJk">-</span></p>
+      <p><b>Pesan :</b> <span id="outPesan">-</span></p>
+    </div>
+  </div>
+  <hr>
+
+    <!-- Script -->
+  <script src="./js/script.js"></script>
+</body>
+</html>

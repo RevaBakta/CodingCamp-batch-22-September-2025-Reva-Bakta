@@ -1,0 +1,315 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    display: flex;
+    /* padding: 5px; */
+    justify-content:space-between;
+}
+
+.logo img{
+    width: 150px;
+    max-width: 100%;
+}
+
+.navbar{
+    display: flex;
+    gap: 1px;
+    justify-content: center;
+    padding: 25px;
+    font-size: 20px;
+}
+
+.navbar a{
+    padding: 5px 20px;
+    border: 2px solid;
+    text-decoration: none;
+}
+
+.hero{
+    height: 90vh;
+    max-height: 100%;
+}
+
+.hero .teks{
+    padding: 50px;
+}
+
+.laman3{
+    padding: 50px;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+.laman3 img{
+    aspect-ratio: 1/1;
+    width: 150px;
+    border-radius: 100px;
+    border: 1px solid;
+}
+.sub3{
+    display: flex;
+    gap: 80px;
+    padding: 0 80px;
+}
+
+.jakarta{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+.bandung{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+.surabaya{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+/* Container untuk form dan output */
+.laman4 {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 20px;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+
+.form-box, .output-box {
+  width: 48%;
+  padding: 30px 40px;
+  box-sizing: border-box;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.output-box h3 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color:black;
+  border-bottom: 2px solid #004d40;
+  padding-bottom: 8px;
+}
+
+
+/* .teks-black{
+    color: black;
+} */
+.output-box p {
+  font-size: 1.1rem;
+  margin-bottom: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.output-box b {
+  color: #00796b;
+}
+
+#time {
+  font-style: italic;
+  color: #004d40;
+  font-weight: 600;
+}
+
+
+/* Responsive untuk layar kecil */
+@media (max-width: 900px) {
+  .laman4 {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .form-box, .output-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
+.form-box input[type="text"],
+.form-box input[type="date"],
+.form-box textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.form-box textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.output-box p {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+/* Bagian Our Profile */
+.our-profile {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.our-profile h1 {
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.our-profile h2 {
+  margin-top: 20px;
+  color: #444;
+}
+
+.our-profile p {
+  line-height: 1.6;
+  color: #555;
+}
+
+.our-profile ul {
+  list-style-type: disc;
+  text-align: left;
+  margin: 10px auto;
+  max-width: 400px;
+  color: #555;
+}
+
+/* ===== Styling Profile Page ===== */
+.our-profile {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.our-profile h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #d62828; /* merah RevoU */
+  margin-bottom: 15px;
+}
+
+.our-profile h2 {
+  font-size: 1.4rem;
+  color: #333;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.our-profile p {
+  line-height: 1.7;
+  color: #555;
+  text-align: justify;
+}
+
+.our-profile ul {
+  list-style-type: square;
+  padding-left: 20px;
+  color: #444;
+}
+
+.our-profile ul li {
+  margin-bottom: 8px;
+}
+
+/* Responsive Mobile */
+@media (max-width: 600px) {
+  .our-profile {
+    padding: 15px;
+  }
+
+  .our-profile h1 {
+    font-size: 1.6rem;
+  }
+
+  .our-profile h2 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Welcome Section */
+.welcome-section {
+  text-align: center;
+  margin: 40px auto;
+  padding: 30px 20px;
+  max-width: 600px;
+  background: #f0f8ff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.welcome-section h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.welcome-section p {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.welcome-section input {
+  padding: 10px;
+  width: 70%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.welcome-section button {
+  padding: 10px 16px;
+  margin-left: 8px;
+  background: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.welcome-section button:hover {
+  background: #005fcc;
+}
+
+#welcome #greeting {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #0077ff;
+}
